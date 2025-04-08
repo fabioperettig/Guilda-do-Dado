@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guilda do Dado</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <section id="hero">
@@ -24,7 +24,8 @@
         </nav>
     </header>
 
-    <main><!-- Bloco do título e busca -->
+    <main>
+        <!-- Bloco do título e busca -->
         <section id="area-titulo-busca">
           <h2>Jogos Disponíveis</h2>
           <div id="search">
@@ -57,40 +58,34 @@
             </div>
           </main>
         </section>
-
     </main>
 
     <footer>
         <p>"Em cada dado rolado, uma história é contada." 🎲</p>
     </footer>
 
-    <script src="scripts/main.js"></script>
-
     <!-- Modal (Janela Flutuante) -->
     <div id="modal-jogo" class="modal hidden">
-        <div class="modal-conteudo">
-            <span id="fechar-modal">&times;</span> <!-- Botão de fechar (X) -->
-
-            <div class="modal-container">
-                <div class="modal-imagem">
-                    <img id="modal-imagem" src="" alt="Imagem do Jogo">
-                </div>
-
-                <div class="modal-detalhes">
-                    <h2 id="modal-nome"></h2>
-                    <p id="modal-categoria"></p>
-                    <p id="modal-dificuldade"></p>
-                    <p id="modal-jogadores"></p>
-                    <p id="modal-sinopse" class="sinopse"></p>
-                    <button id="botao-alugar" class="btn-alugar">
-                        <img src="assets/img/icon-buy.png" alt="Ícone de Comprar" class="icon-buy">
-                        Alugar Jogo
-                    </button>
-                </div>
+        <div class="modal-conteudo" id="modal-conteudo">
+            <span id="fechar-modal">&times;</span>
+            <div class="modal-imagem">
+                <img id="modal-imagem" src="" alt="Imagem do Jogo">
             </div>
-
+            <div class="modal-detalhes">
+                <h2 id="modal-nome"></h2>
+                <p id="modal-categoria"></p>
+                <p id="modal-dificuldade"></p>
+                <p id="modal-jogadores"></p>
+                <p id="modal-sinopse" class="sinopse"></p>
+                <button id="botao-alugar" class="btn-alugar">
+                    <img src="assets/img/icon-buy.png" alt="Ícone de Comprar" class="icon-buy">
+                    Alugar Jogo
+                </button>
+            </div>
         </div>
     </div>
 
+    <script src="scripts/main.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>

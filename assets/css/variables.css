@@ -1,0 +1,13 @@
+:root {
+    --cor-fundo: #3c2c4d;
+    --cor-fundo-claro: #6b4f77;
+    --cor-hero: #59331b;
+    --cor-nav:#311a0c;
+    --cor-texto: #f9e4b7;
+    --cor-destaque: #c3884b;
+    --cor-botao: #af6f4d;;
+    --cor-botao-hover: #d8a65a;
+    --cor-galeria: #2f2929;
+    --cor-borda-dourada: #FFD700; /* Dourado */
+    --cor-header-bg: #3c2b23; /* Marrom escuro usado para sombra */
+}
