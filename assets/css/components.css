@@ -21,7 +21,7 @@
 
 .btn-alugar {
     margin-top: 1.5rem;
-    background-color: var(--cor-botao-bg);
+    background-color: #2d1d0f;
     color: #fff;
     padding: 1rem 2rem;
     border: none;
@@ -34,7 +34,6 @@
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
-    box-shadow: 4px 4px 0 var(--cor-header-bg);
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 

@@ -22,12 +22,14 @@
     background-color: var(--cor-card-bg, #5c4033); /* usa marrom escuro se não tiver variável */
     padding: 2rem;
     border-radius: 10px;
-    max-width: 500px;
+    max-width: 900px;
     width: 90%;
-    text-align: center;
-    box-shadow: 8px 8px 0 var(--cor-dourado, #ffd700); /* sombra pixelada dourada */
+    text-align: left;
+    box-shadow: 8px 8px 0 #000000; /* sombra pixelada dourada */
     position: relative;
   }
+
+  
   
   /* Botão de fechar */
   #fechar-modal {
