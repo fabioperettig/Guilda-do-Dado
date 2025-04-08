@@ -1,0 +1,463 @@
+:root {
+    --cor-fundo: #2b1f2f;
+    --cor-texto: #f8e8c8;
+    --cor-hero-bg: #5a3d31;
+    --cor-botao-bg: #a67246;
+    --cor-botao-hover: #d99a5e;
+    --cor-header-bg: #3b2b3c;
+    --cor-filtro-bg: #6e4b3a;
+    --cor-card-bg: #4b3645;
+    --cor-footer-texto: #c2b8a3;
+    --cor-hover-titulo: #ffd08a;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto); 
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-texto);
+    background: url('assets/img/background-tavern.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 25, 12, 0.7);
+    z-index: 2;
+}
+
+#hero > * {
+    position: relative;
+    z-index: 3;
+}
+
+#hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: var(--cor-botao-bg);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+#main-logo{
+    width: 500px;
+    margin-bottom: 3rem;
+}
+
+header {
+    background-color: var(--cor-header-bg);
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: var(--cor-botao-hover);
+}
+
+/* Filtros */
+#filtros {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.filtro-btn {
+    background-color: var(--cor-filtro-bg);
+    color: var(--cor-texto);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filtro-btn:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+
+#galeria-jogos {
+    padding-left: 2rem;
+}
+
+.grid-jogos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
+    gap: 2rem; /* um espaço bonito entre os cards */
+    margin-top: 0;
+}
+
+.card-jogo {
+    background-color: var(--cor-card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-jogo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.card-jogo h3 {
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+.card-jogo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--cor-botao-hover);
+}
+
+
+footer {
+    background-color: var(--cor-header-bg);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--cor-footer-texto);
+}
+
+
+#hero h1,
+h2,
+h3 {
+    text-shadow: 2px 2px 0px var(--cor-header-bg), 
+                 -2px -2px 0px var(--cor-botao-hover); 
+}
+
+
+.btn-hero:hover {
+    background-color: var(--cor-botao-hover);
+    box-shadow: 0 0 10px var(--cor-botao-hover);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+h2:hover,
+h3:hover {
+    color: var(--cor-hover-titulo);
+    transition: color 0.3s;
+}
+
+.card-jogo p:first-of-type {
+    font-weight: bold;
+    color: #d99a5e;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    background-color: var(--cor-hero-bg);
+    border: 4px solid var(--cor-botao-hover);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+    animation: aparecer 0.3s ease-out;
+}
+
+.modal-conteudo img {
+    max-width: 250px; /* <-- limitamos a imagem */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 4px solid var(--cor-botao-hover);
+}
+
+/* Nova classe para a sinopse */
+.sinopse {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+/* Estilo para o botão "Alugar" */
+.btn-alugar {
+    margin-top: 1.5rem;
+    background-color: var(--cor-botao-bg);
+    color: #fff;
+    padding: .5rem 1rem 0rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    box-shadow: 4px 4px 0 var(--cor-header-bg);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-alugar > img {
+    width: 40px;
+    border: none;
+}
+
+.btn-alugar:hover {
+    background-color: var(--cor-botao-hover);
+    transform: scale(1.05);
+    box-shadow: 6px 6px 0 var(--cor-header-bg);
+}
+
+.modal-conteudo h2 {
+    margin-bottom: 1rem;
+}
+
+.modal-conteudo p {
+    margin: 0.5rem 0;
+}
+
+#fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: var(--cor-botao-hover);
+    cursor: pointer;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-imagem img {
+    max-height: 400px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.modal-detalhes {
+    flex: 1;
+    text-align: left;
+}
+
+.modal-detalhes h2 {
+    margin-bottom: 1rem;
+}
+
+.modal-detalhes p {
+    margin: 0.5rem 0;
+}
+
+.modal-detalhes .sinopse {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+/* Novo Layout: Área principal com filtros lateral e conteúdo central */
+#area-principal {
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+/* Área de filtros lateral */
+#filtros-categorias {
+    background-color: var(--cor-card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    height: fit-content;
+}
+
+#filtros-categorias h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#filtros-categorias label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#filtros-categorias input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+#area-titulo-busca {
+    padding: 2rem;
+    text-align: center;
+}
+
+#area-titulo-busca h2 {
+    margin-bottom: 1.5rem;
+}
+
+#area-titulo-busca input[type="text"] {
+    width: 90%;
+    max-width: 800px;
+    padding: 1rem;
+    border: 4px solid var(--cor-botao-hover); /* borda grossa tipo pixel */
+    border-radius: 2; /* sem arredondamento, cantos retos */
+    background-color: var(--cor-card-bg); /* fundo combinando */
+    color: var(--cor-texto);
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive, sans-serif; /* já tá no body, mas aqui reforçamos */
+    text-transform: uppercase; /* letras maiúsculas estilo retrô */
+    box-shadow: 4px 4px 0 var(--cor-header-bg); /* sombra dura tipo pixel */
+    outline: none;
+}
+
+/* Área central */
+#conteudo-principal {
+    flex: 1;
+}
+
+#conteudo-principal h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Barra de busca */
+#busca-jogos {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: .8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Estilos para a nova div de busca */
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto 2rem auto;
+    width: fit-content;
+}
+
+#search input[type="text"] {
+    width: 500px;
+    padding: 1rem;
+    border: 4px solid var(--cor-botao-hover);
+    border-radius: 0;
+    background-color: var(--cor-card-bg);
+    color: var(--cor-texto);
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 var(--cor-header-bg);
+    outline: none;
+}
+
+#search img {
+    height: 60px;
+    width: auto;
+    padding-bottom: 6px;
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.btn-alugar:hover .icon-buy {
+    animation: flutuar 1s infinite ease-in-out;
+}
