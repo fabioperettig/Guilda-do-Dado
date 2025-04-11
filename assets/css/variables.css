@@ -8,6 +8,7 @@
     --cor-botao: #1f0e06;;
     --cor-botao-hover: #d8a65a;
     --cor-galeria: #2f2929;
-    --cor-borda-dourada: #FFD700; /* Dourado */
-    --cor-header-bg: #3c2b23; /* Marrom escuro usado para sombra */
+    --cor-borda-dourada: #FFD700;
+    --cor-header-bg: #3c2b23;
+    --cor-black: #000000;
 }

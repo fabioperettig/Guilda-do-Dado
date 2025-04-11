@@ -84,15 +84,15 @@ nav ul li a:hover {
     font-size: 2.5rem;
 }
 
-/* Caixa de Filtros */
+
 #filtros-categorias {
-    background-color: #5a3d31; /* marrom mais intenso */
+    background-color: #5a3d31;
     padding: 1.5rem;
-    border: 4px solid #ffd08a; /* borda dourada */
+    border: 4px solid #ffd08a;
     border-radius: 10px;
     width: 250px;
     height: fit-content;
-    box-shadow: 8px 8px 0 #000000; /* sombra pixelada escura */
+    box-shadow: 8px 8px 0 #000000;
 }
 
 /* Caixa da Galeria */
@@ -106,11 +106,11 @@ nav ul li a:hover {
     background-repeat: repeat;
     background-size: 500px;
     
-    /* Novo: cor escura sobre o fundo + mistura */
+    
     background-color: rgba(47, 41, 41, 0.6);
     background-blend-mode: multiply;
     
-    /* Box e sombra */
+    
     border: 4px solid #ffd08a;
     border-radius: 10px;
     box-shadow:
@@ -118,20 +118,3 @@ nav ul li a:hover {
         8px 8px 0 #000000; /* Sombra pixelada externa */
     padding: 2rem;
 }
-
-.card-jogo {
-    width: 22%;
-    min-width: 220px;
-    background-color: #d46535; /* marrom */
-    border: 4px solid #ffd08a; /* borda dourada */
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 8px 8px 0 #000000;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-

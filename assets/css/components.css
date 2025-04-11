@@ -51,11 +51,12 @@
 .card-jogo {
     width: 22%;
     min-width: 220px;
-    background-color: var(--cor-card-bg);
+    background-color: var(--cor-hero);
+    border: solid 4px var(--cor-botao-hover);
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 4px 4px 0 var(--cor-header-bg);
+    box-shadow: 1px 1px 0 var(--cor-black);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     display: flex;
@@ -72,43 +73,5 @@
 
 .card-jogo:hover {
     transform: scale(1.05);
-    box-shadow: 6px 6px 0 var(--cor-header-bg);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-conteudo {
-    background-color: var(--cor-card-bg);
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    gap: 2rem;
-    max-width: 800px;
-}
-
-.modal-imagem img {
-    width: 250px;
-    border-radius: 8px;
-}
-
-.modal-conteudo .detalhes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hidden {
-    display: none;
+    box-shadow: 10px 10px 0 var(--cor-black);
 }
