@@ -1,0 +1,130 @@
+[
+  {
+    "nome": "Forest Quest",
+    "categoria": "aventura",
+    "sinopse": "Aventure-se pela floresta encantada e enfrente criaturas mágicas em busca do tesouro perdido!",
+    "dificuldade": "Fácil",
+    "jogadores": "1 a 4",
+    "imagem": "assets/img/forest-quest.png"
+  },
+  {
+    "nome": "Galactic Jelly",
+    "categoria": "party-game",
+    "sinopse": "Viaje pelo espaço coletando geléias cósmicas em missões divertidas!",
+    "dificuldade": "Fácil",
+    "jogadores": "1 a 6",
+    "imagem": "assets/img/galactic-jelly.png"
+  },
+  {
+    "nome": "Maré Selvagem",
+    "categoria": "estratégia",
+    "sinopse": "Comande sua frota pelos mares perigosos e conquiste territórios estratégicos!",
+    "dificuldade": "Difícil",
+    "jogadores": "1 a 8",
+    "imagem": "assets/img/mare-selvagem.png"
+  },
+  {
+    "nome": "Ruínas do Amanhã",
+    "categoria": "terror",
+    "sinopse": "Explore as ruínas de civilizações antigas para desvendar o futuro da humanidade.",
+    "dificuldade": "Médio",
+    "jogadores": "1 a 12",
+    "imagem": "assets/img/ruinas-amanha.png"
+  },
+  {
+    "nome": "Sombras da Verdade",
+    "categoria": "investigação",
+    "sinopse": "Descubra segredos e resolva enigmas em uma cidade cheia de conspirações.",
+    "dificuldade": "Médio",
+    "jogadores": "1 a 8",
+    "imagem": "assets/img/sombras-verdade.png"
+  },
+  {
+    "nome": "Castelo das Runas",
+    "categoria": "fantasia",
+    "sinopse": "Conquiste salas secretas e proteja suas runas mágicas enquanto batalha contra outros magos.",
+    "dificuldade": "Médio",
+    "jogadores": "1 a 6",
+    "imagem": "assets/img/castelo-runas.png"
+  },
+  {
+    "nome": "Bosque Encantado",
+    "categoria": "cooperativo",
+    "sinopse": "Ajude criaturas mágicas a reconstruir o bosque perdido! Um jogo cooperativo cheio de encantos.",
+    "dificuldade": "Fácil",
+    "jogadores": "1 a 5",
+    "imagem": "assets/img/bosque-encantado.png"
+  },
+  {
+    "nome": "Dragões & Diplomatas",
+    "categoria": "estratégia",
+    "sinopse": "Negocie alianças, treine seus dragões e conquiste territórios neste épico jogo de estratégia.",
+    "dificuldade": "Médio",
+    "jogadores": "1 a 8",
+    "imagem": "assets/img/dragoes-diplomatas.png"
+  },
+  {
+    "nome": "O Mapa do Herói",
+    "categoria": "aventura",
+    "sinopse": "Explore terras esquecidas e recupere as peças do lendário mapa perdido antes dos seus rivais.",
+    "dificuldade": "Médio",
+    "jogadores": "1 a 4",
+    "imagem": "assets/img/mapa-heroi.png"
+  },
+  {
+    "nome": "Alquimia Secreta",
+    "categoria": "criatividade",
+    "sinopse": "Misture ingredientes raros para criar poções mágicas e vencer a grande competição de alquimia!",
+    "dificuldade": "Fácil",
+    "jogadores": "1 a 6",
+    "imagem": "assets/img/alquimia-secreta.png"
+  },
+  {
+    "nome": "Relíquias do Abismo",
+    "categoria": "investigação",
+    "sinopse": "Navegue em marés negras, cujas ilhas esquecidas emergem mistérios e horrores. Com deuses abissais, relíquias e civilizações afundadas no tempo.",
+    "dificuldade": "Difícil",
+    "jogadores": "1 a 6",
+    "imagem": "assets/img/reliquias-abismo.png"
+  },
+  {
+    "nome": "Cavaleiros da Aurora",
+    "categoria": "fantasia",
+    "sinopse": "O mundo mergulhou em trevas. Empunhe sua espada sagrada, desafie as sombras e escreva seu nome na última canção da alvorada.",
+    "dificuldade": "Médio",
+    "jogadores": "1 a 4",
+    "imagem": "assets/img/cavaleiro-aurora.png"
+  },
+  {
+    "nome": "Sombras do Sussurro",
+    "categoria": "terror",
+    "sinopse": "Quando a noite cai em Highstone, vozes esquecidas voltam a sussurrar. É seu dever decifrar pistas ambiguas, enfrentar horrores velados e desvendar a verdade antes que a vila se perca para sempre.",
+    "dificuldade": "Difícil",
+    "jogadores": "1 a 2",
+    "imagem": "assets/img/sombras-sussurro.png"
+  },
+  {
+    "nome": "Expedição à Cidade dos Gigantes",
+    "categoria": "exploração",
+    "sinopse": "Entre montanhas esquecidas, repousa a Cidade dos Gigantes — colunas quebradas, estátuas titânicas e segredos adormecidos. Atravesse os portões descomunais e busque glória, conhecimento… e sobrevivência.",
+    "dificuldade": "Médio",
+    "jogadores": "1 a 8",
+    "imagem": "assets/img/cidade-gigantes.png"
+  },
+  {
+    "nome": "A Última Fagulha",
+    "categoria": "terror",
+    "sinopse": "O fogo está morrendo, e com ele, o último vestígio de vida no mundo. Ceitas errantes lutam para proteger as últimas chamas sagradas contra as sombras.",
+    "dificuldade": "Difícil",
+    "jogadores": "1 a 4",
+    "imagem": "assets/img/ultima-fagulha.png"
+  },
+  {
+    "nome": "Rumo à Vida",
+    "categoria": "party-game",
+    "sinopse": "Trace sua jornada, escolha seus sonhos! Cada decisão molda sua história: carreira, estudos, amigos e amores. Você faz o seu destino.",
+    "dificuldade": "Fácil",
+    "jogadores": "1 a 10",
+    "imagem": "assets/img/rumo-vida.png"
+  }
+]

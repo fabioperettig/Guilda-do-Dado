@@ -36,22 +36,47 @@
         
         <!-- Área principal -->
         <section id="area-principal">
+
           <aside id="filtros-categorias">
-            <h2>Filtros</h2>
-            <label>
-              <input type="checkbox" class="filtro-categoria" value="aventura">
-              Aventura
-            </label>
-            <label>
-              <input type="checkbox" class="filtro-categoria" value="estrategia">
-              Estratégia
-            </label>
-            <label>
-              <input type="checkbox" class="filtro-categoria" value="familia">
-              Família
-            </label>
+            <div class="filtro-categoria">
+              <h2>Categoria</h2>
+              <label><input type="checkbox" class="filtro-categoria" value="aventura"> Aventura</label>
+              <label><input type="checkbox" class="filtro-categoria" value="cooperativo"> Cooperativo</label>
+              <label><input type="checkbox" class="filtro-categoria" value="criatividade"> Criatividade</label>
+              <label><input type="checkbox" class="filtro-categoria" value="estratégia"> Estratégia</label>
+              <label><input type="checkbox" class="filtro-categoria" value="fantasia"> Fantasia</label>
+              <label><input type="checkbox" class="filtro-categoria" value="investigação"> Investigação</label>
+              <label><input type="checkbox" class="filtro-categoria" value="party-game"> Party Game</label>
+              <label><input type="checkbox" class="filtro-categoria" value="terror"> Terror</label>
+            </div>
+          
+            <div id="line" class="line">
+              <div class="torch-line"></div>
+              <img class="torch" src="assets/img/torch.gif" alt="torch">
+              <div class="torch-line"></div>
+            </div>
+
+            <div class="filtro-jogadores">
+              <h2>Número de Jogadores</h2>
+              <input type="range" id="slider-jogadores" min="1" max="12" value="1">
+              <span id="valor-jogadores">1 jogador</span>
+            </div>
+
+            <div id="line" class="line">
+              <div class="torch-line"></div>
+              <img class="torch" src="assets/img/torch.gif" alt="torch">
+              <div class="torch-line"></div>
+            </div>
+
+          
+            <div class="filtro-dificuldade">
+              <h2>Dificuldade</h2>
+              <label><input type="checkbox" class="filtro-dificuldade" value="fácil"> Fácil</label>
+              <label><input type="checkbox" class="filtro-dificuldade" value="médio"> Médio</label>
+              <label><input type="checkbox" class="filtro-dificuldade" value="difícil"> Difícil</label>
+            </div>
           </aside>
-        
+
           <main id="conteudo-principal">
             <div id="galeria-jogos" class="grid-jogos">
               <!-- Jogos aparecem aqui -->
@@ -87,5 +112,6 @@
 
     <script src="scripts/main.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/filtros.js"></script>
 </body>
 </html>

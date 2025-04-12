@@ -51,6 +51,8 @@
 .card-jogo {
     width: 22%;
     min-width: 220px;
+    height: auto;
+    max-height: 30rem;
     background-color: var(--cor-hero);
     border: solid 4px var(--cor-botao-hover);
     padding: 1rem;
@@ -74,4 +76,71 @@
 .card-jogo:hover {
     transform: scale(1.05);
     box-shadow: 10px 10px 0 var(--cor-black);
+}
+
+.filtro-jogadores {
+    width: 200px; /* ou o tamanho que quiser */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slider-jogadores {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 10px;
+    background: var(--cor-hero);
+    border: 2px solid var(--cor-botao-hover);
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 4px 4px 0 var(--cor-header-bg);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#slider-jogadores::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--cor-botao-hover);
+    border: 2px solid var(--cor-header-bg);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#slider-jogadores::-webkit-slider-thumb:hover {
+    transform: scale(1.5);
+}
+
+#valor-jogadores {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    text-align: center;
+    min-width: 140px;
+    margin-top: 1rem;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin: 2rem 0 3rem 0;
+    gap: .5rem;
+}
+
+.torch {
+    width: 7%;    
+}
+
+.torch-line {
+    margin: 10px 0 0 0;
+    width: 90%;
+    height: 2px;
+    background-color: var(--cor-botao-hover);
 }
